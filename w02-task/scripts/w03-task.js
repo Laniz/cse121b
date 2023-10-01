@@ -94,7 +94,7 @@ const currentYear = currentDate.getFullYear();
 
 let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
-document.querySelector('#array').innerHTML = numbersArray;
+document.querySelector('#array').innerHTML = numbersArray.join(',');
 
 
 
