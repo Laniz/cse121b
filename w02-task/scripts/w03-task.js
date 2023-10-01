@@ -84,11 +84,15 @@ document.querySelector('#divideNumbers').addEventListener('click', divideNumbers
 
 /* Decision Structure */
 
+const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
+
 
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
+
+
 
 /* Output Sum of Org. Array */
 
@@ -100,7 +104,7 @@ document.querySelector('#array').innerHTML = numbersArray.join(',');
 
 
 /* Output Odds Only Array */
-document.querySelector('#evens').innerHTML = numbersArray.filter(number => number % 2 !== 0);
+document.querySelector('#odds').innerHTML = numbersArray.filter(number => number % 2 !== 0);
 
 
 /* Output Evens Only Array */
