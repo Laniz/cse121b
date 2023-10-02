@@ -50,17 +50,15 @@ document.querySelector('#subtractNumbers').addEventListener('click', difference)
 /* Arrow Function - Multiply Numbers */
 
 // Function Definition - Multiply Numbers
-function multiply(factor1, factor2) {
-    return factor1 * factor2;
-}
+const multiply = (factor1, factor2) => factor1 * factor2;
 
-function performMultiplication() {
+
+const performMultiplication = () => {
     const factor1 = Number(document.querySelector('#factor1').value);
     const factor2 = Number(document.querySelector('#factor2').value);
 
     document.querySelector('#product').value = multiply(factor1, factor2);
-}
-
+};
 
 document.querySelector('#multiplyNumbers').addEventListener('click', performMultiplication);
 
@@ -68,9 +66,7 @@ document.querySelector('#multiplyNumbers').addEventListener('click', performMult
 
 /* Open Function Use - Divide Numbers */
 
-function divide(dividend, divisor) {
-    return dividend / divisor;
-}
+const divide = (dividend, divisor) => dividend / divisor;
 
 function divideNumbers() {
     const dividendNumber = Number(document.querySelector('#dividend').value);
@@ -86,8 +82,7 @@ document.querySelector('#divideNumbers').addEventListener('click', divideNumbers
 
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
-
-
+document.querySelector('#year').innerHTML = currentYear;
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
@@ -134,15 +129,4 @@ const sumOfMultiplied = multipliedArray.reduce((accumulator, currentNumber) => a
 
 document.querySelector('#sumOfMultiplied').innerHTML = sumOfMultiplied;
 
-
-
-/* Output Sum of Multiplied by 2 Array */
-
-
-const sumOfArray2 = numbersArray.reduce((accumulator, currentNumber) => accumulator + currentNumber, 0);
-
-const multipliedSum = sumOfArray * 2;
-
-
-document.querySelector('#sumOfMultiplied').innerHTML = multipliedSum;
 
