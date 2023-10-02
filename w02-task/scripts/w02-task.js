@@ -4,8 +4,12 @@
 
 /* Step 2 - Variables */
 
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+// document.querySelector('#year').innerHTML = currentYear;
+
 const fullName = 'Shepherd Ncube';
-const currentYear = '2023';
+// const currentYear = '2023';
 const profilePicture = 'images/placeholder.jpg';
 
 /* Step 3 - Element Variables */
