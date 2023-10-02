@@ -111,13 +111,11 @@ document.querySelector('#evens').innerHTML = numbersArray.filter(number => numbe
 // Calculate the sum of the array
 const sumOfArray = numbersArray.reduce((accumulator, currentNumber) => accumulator + currentNumber, 0);
 
-
 document.querySelector('#sumOfArray').innerHTML = sumOfArray;
 
 
 /* Output Multiplied by 2 Array */
 const multipliedArray = numbersArray.map(number => number * 2);
-
 
 document.querySelector('#multiplied').innerHTML = multipliedArray.join(', ');
 
