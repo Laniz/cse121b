@@ -74,6 +74,7 @@ let placese = myProfile.placesLived;
 
 let places = document.querySelector('#places-lived')
 let list = ''
+
 placese.forEach(element => { 
     list += `<dt><strong>${element.place}</strong></dt>
     <dd>${element.length}</dd>`;
