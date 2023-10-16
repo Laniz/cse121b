@@ -51,17 +51,14 @@ const sortBy = (filter) => {
             break;
         case "notutah":
             // "notutah": filter for temples where the location does not contain "Utah" as a string.
-            displayTemples(temples.filter((temple) => !temple.location.toLowerCase().includes("utah")));
+            displayTemples(temples.filter((temple) => !temple.location.includes("Utah")));
             break;
-            
         case "older":
             displayTemples(temples.filter((temple) => new Date(temple.dedicated) < new Date(1950, 0, 1)));
             break;
         case "all":
             displayTemples(temples);
             break;
-        // default:
-        //     displayTemples(temples);
     }
 }
 
