@@ -35,7 +35,7 @@ async function getTemples() {
     }
 }
 
-getTemples();
+
 /* reset Function */
 function reset() {
     let templesArticle = document.getElementById('temples');
@@ -64,6 +64,7 @@ const sortBy = (filter) => {
             break;
     }
 }
+getTemples();
 /* Event Listener */
 let sortByElement = document.getElementById('sortBy');
 sortByElement.addEventListener('change', () => {
