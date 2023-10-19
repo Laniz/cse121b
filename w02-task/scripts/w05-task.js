@@ -2,7 +2,7 @@
 /* Declare and initialize global variables */
 let temples = [];
 
-function output(templeList) {
+function displayTemple(templeList) {
     templeList.forEach(function (temple) {
         let article = document.createElement('article');
         let h3 = document.createElement('h3');
@@ -29,7 +29,7 @@ async function getTemples() {
         let response = await fetch('https://byui-cse.github.io/cse121b-course/week05/temples.json');
         let templeList = await response.json();
         temples = templeList;
-        output(temples);
+        displayTemple(temples);
     } catch (error) {
         console.log("Error: ", error);
     }
@@ -72,5 +72,5 @@ sortByElement.addEventListener('change', () => {
 });
 
 function displayTemples(filteredTemples) {
-    output(filteredTemples);
+    displayTemple(filteredTemples);
 }
