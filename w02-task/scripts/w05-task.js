@@ -44,26 +44,25 @@ function reset() {
     }
 }
 /* sortBy Function */
-const sortBy = (filter) => {
+function sortBy(filter) {
     reset();
 
     switch (filter) {
         case "utah":
-            // "utah": filter for temples where the location contains "Utah" as a string.
             displayTemples(temples.filter((temple) => temple.location.includes("Utah")));
             break;
         case "notutah":
-            // "notutah": filter for temples where the location does not contain "Utah" as a string.
             displayTemples(temples.filter((temple) => !temple.location.includes("Utah")));
             break;
         case "older":
-            displayTemples(temples.filter((temple) => new Date(temple.dedicated) < new Date(1950, 0, 1)));
+            displayTemples(temples.filter((temple) => new Date(temple.dedicated) < new Date('1950-01-01')));
             break;
         case "all":
             displayTemples(temples);
             break;
     }
 }
+
 getTemples();
 /* Event Listener */
 let sortByElement = document.getElementById('sortBy');
