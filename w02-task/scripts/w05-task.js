@@ -2,6 +2,7 @@
 /* Declare and initialize global variables */
 let temples = [];
 
+/* async displayTemples Function */
 function displayTemple(templeList) {
     templeList.forEach(function (temple) {
         let article = document.createElement('article');
@@ -22,7 +23,6 @@ function displayTemple(templeList) {
         document.getElementById('temples').appendChild(article);
     });
 }
-/* async displayTemples Function */
 /* async getTemples Function using fetch()*/
 async function getTemples() {
     try {
