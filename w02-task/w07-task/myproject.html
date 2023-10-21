@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../styles/project.css">
 </head>
 <body>
+    <nav>
+        <ul id="menu">
+          <li><a id="toggleMenu">&equiv;</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../w01-task/w01-task.html">W1 Task</a></li>
+          <li><a href="../w03-task/w03-task.html">W3 Task</a></li>
+          <li><a href="../w04-task/w04-task.html">W4 Task</a></li>
+          <li><a href="../w05-task/w05-task.html">W5 Task</a></li>
+          <li><a href="../w07-task/myproject.html"class="active">Project</a></li>
+        </ul>
+      </nav>
+<div class="card">
+    <div class="search">
+        <input type="text" placeholder="Enter City name" spellcheck="false">
+        <button><img src="../images/search.png"> </button>
+    </div>
+    <div class="error">
+        <p>Invalid City Name</p>
+    </div>
+
+    <div class="weather">
+        <img src="../images/rain.png" class="weather_icon">
+        <h1 class="temp">N/A °C</h1>
+        <h2 class="city">placeholder</h2>
+        <p class="message">Weather condition message goes here</p>
+        <div class="details">
+            <div class="col">
+                <img src="../images/humidity.png" alt="">
+                <div>
+                    <p class="humidity">N/a %</p>
+                    <p>humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="../images/wind.png" alt="">
+                <div>
+                    <p class="wind">N/A km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Temperature Statistics -->
+    <div class="temperature-stats">
+        <h3>Temperature Statistics</h3>
+        <p class="high-temp">Highest Temperature: Loading(Enter City)...</p>
+        <p class="low-temp">Lowest Temperature: Loading(Enter City)...</p>
+        <p class="avg-temp">Average Temperature: Loading(Enter City)...</p>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <p>Loading data...</p>
+    </div>
+</div>
     
 </body>
+<footer>
+    &copy;<span id="year"></span> | Week 07 - Final Project | CSE 121b
+  </footer>
+<script type="module" src="../scripts/project.js"></script>
 </html>
