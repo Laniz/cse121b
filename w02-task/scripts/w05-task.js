@@ -26,7 +26,7 @@ function displayTemple(templeList) {
 /* async getTemples Function using fetch()*/
 async function getTemples() {
     try {
-        let response = await fetch('https://byui-cse.github.io/cse121b-course/week05/temples.json');
+        let response = await fetch('https://byui-cse.github.io/cse121b-ww-course/resources/temples.json');
         let templeList = await response.json();
         temples = templeList;
         displayTemple(temples);
