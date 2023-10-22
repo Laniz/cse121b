@@ -11,8 +11,6 @@ const toggleMenu = () => {
 
 document.querySelector('#toggleMenu').addEventListener('click', toggleMenu);
 
-
-
 // Get references to various HTML elements
 const search_box = document.querySelector(".search input"); // Input field for city search
 const search_btn = document.querySelector(".search button"); // Search button
@@ -50,7 +48,6 @@ function setWeatherIcon(weatherMain) {
             break;
     }
 }
-
 
 // Add a click event listener to the search button
 search_btn.addEventListener("click", async () => {
