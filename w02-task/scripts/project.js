@@ -19,7 +19,8 @@ const error_message = document.querySelector(".error"); // Element for displayin
 const loadingScreen = document.getElementById('loading-screen'); // Element for displaying loading screen
 const weather_stats = document.querySelector(".temperature-stats"); //Element for temparature
 const weather_details = document.querySelector(".details");
-const weather_main = document.querySelector(".weather")
+const weather_main = document.querySelector(".weather");
+
 
 weather_stats.style.display = "none";
 weather_details.style.display = "none";
