@@ -11,9 +11,9 @@ body{
 .card{
     width: 90%;
     max-width: 600px;
-    background:linear-gradient(135deg, #00feba, #5b548a);
+    background:linear-gradient(135deg, green, #5b548a);
     color: #fff;
-    margin: 200px auto ;
+    margin: 100px auto ;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
@@ -30,8 +30,8 @@ body{
     border: 0;
     outline: 0;
     background: #ebfffc;
-    color: red;
-    padding: 10px, 25px;
+    color: black;
+    padding-left: 15px;
     height: 60px;
     border-radius: 30px;
     flex: 1;
@@ -52,7 +52,7 @@ body{
 .search button img{
     width: 16px;
 }
-;
+
 
 .weather_icon{
     width: 170px;
@@ -97,9 +97,10 @@ body{
 .error{
     text-align: left;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 10px;
     display: none;
+    color: white;
 }
 
 .loading-screen {
@@ -184,20 +185,10 @@ nav ul li a:hover {
     margin-top: 80px;
 }
 
-/* h2 {
-    font-size: 1.5rem;
-    color: navy;
-    text-align: center;
-    margin-top: 25px;
-} */
-
-
 
 header {
     margin-top: 70px;
 }
-
-
 
 
 article div {
@@ -205,6 +196,19 @@ article div {
     text-align: right;
 }
 
+
+/* .temperature-stats{
+    display: none;
+} */
+
+
+.temperature-stats h3{
+    padding: 20px;
+}
+
+.temperature-stats p{
+    padding: 5px;
+}
 
 
 footer {
@@ -220,10 +224,6 @@ footer {
 .active {
     border-bottom: 1px solid yellow;
 }
-
-
-
-
 
 
 /* Media Queries */

@@ -19,6 +19,13 @@ const search_btn = document.querySelector(".search button"); // Search button
 const weather_icon = document.querySelector(".weather_icon"); // Element for displaying weather icon
 const error_message = document.querySelector(".error"); // Element for displaying error messages
 const loadingScreen = document.getElementById('loading-screen'); // Element for displaying loading screen
+const weather_stats = document.querySelector(".temperature-stats"); //Element for temparature
+const weather_details = document.querySelector(".details");
+const weather_main = document.querySelector(".weather")
+
+weather_stats.style.display = "none";
+weather_details.style.display = "none";
+weather_main.style.display = "none";
 
 // Function to set the weather icon based on weather conditions
 function setWeatherIcon(weatherMain) {
@@ -62,6 +69,9 @@ search_btn.addEventListener("click", async () => {
         error_message.style.display = "block";
         error_message.textContent = data.error;
         loadingScreen.style.display = "none";
+        weather_stats.style.display = "none";
+        weather_details.style.display = "none";
+        weather_main.style.display = "none";
     } else {
         // If there's no error, hide the error message
         error_message.style.display = "none";
@@ -105,6 +115,10 @@ search_btn.addEventListener("click", async () => {
 
         // Hide the loading screen and display temperature values in the HTML
         loadingScreen.style.display = "none";
+        weather_stats.style.display = "block";
+        weather_details.style.display = "flex";
+        weather_main.style.display = "block";
+
         document.querySelector(".high-temp").textContent = `Highest Temperature: ${highestTemp.toFixed(2)} °C`;
         document.querySelector(".low-temp").textContent = `Lowest Temperature: ${lowestTemp.toFixed(2)} °C`;
         document.querySelector(".avg-temp").textContent = `Average Temperature: ${avgTemp.toFixed(2)} °C`;
